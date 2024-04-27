@@ -1,25 +1,25 @@
 import React from 'react';
-import image1 from '../img/img2.png'; // Import the image for the left div
+import image4 from '../img/img2.png'; // Import the image for the left div
 import image2 from '../img/img1.png'; // Import the image for the right div
 import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div className="bg-gray-900 min-h-screen py-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-10 md:pt-0">
+        <div className="bg-gray-900 min-h-screen pt-14">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3  md:pt-0">
                 {/* Left side div */}
-                <div className="relative flex flex-col justify-center items-center md:items-start p-6 lg:p-10">
+                <div className="relative flex flex-col justify-center items-center md:items-start p-5  lg:p-10">
                     {/* Background image with opacity */}
                     <div className="absolute inset-0 "></div>
                     {/* Text content */}
-                    <div className="relative z-10 text-white text-center md:text-left mb-6 lg:mb-10">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">Delicious food for</h1>
+                    <div className="relative z-10 text-white text-center md:text-left  mb-6 px-5 lg:mb-10">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4  lg:mb-6">Delicious food for</h1>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-red-500 mb-4 lg:mb-6">Food lovers</h1>
                         <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 lg:mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut mattis lectus. Ut ultrices nunc vel libero.</p>
                     </div>
                     {/* Buttons */}
                     {/* Wrap buttons with Link component and set correct 'to' prop */}
-                                <div className='grid grid-cols-2 gap-4'>
+                                <div className='grid grid-cols-2  gap-4'>
                                     <Link to="/menu">
                                     <button className="bg-red-500 text-white py-4 px-8 rounded-full text-xl sm:text-2xl lg:text-xl   hover:bg-red-700 transition duration-300 ease-in-out">View Menu</button>
                                     </Link>
@@ -27,18 +27,19 @@ const Home = () => {
                                     <button className="bg-blue-500  text-white py-4 px-5 rounded-full text-xl sm:text-2xl lg:text-xl hover:bg-blue-700 transition duration-300 ease-in-out">View location</button>
                                     </Link>
                                 </div>
+                               
                 </div>
+                <img src={image4} alt="Background Image 1" className=" hidden md:block absolute bottom-0 left-0 opacity-50" style={{maxWidth: '70%', maxHeight: '50%'}} />
                 {/* Right side div */}
-                <div className="block md:hidden">
-                    {/* Adjusted image to make it responsive */}
-                    <img src={image2} alt="Delicious Food" className="w-full h-auto" />
-                </div>
-                <div className="hidden md:block">
+                
+                <div className="">
                     {/* Big image covering a big space */}
-                    <img src={image2} alt="Delicious Food" className="w-full h-full object-cover" />
+                    <img src={image2} alt="Delicious Food" className="w-full h-full  object-cover" />
                 </div>
             </div>
+          
         </div>
+        
     );
 }
 
@@ -52,8 +53,7 @@ export default Home;
 // const Home = () => {
 //   return (
 //     <div>
-//       <div className="bg-cover bg-center min-h-screen" style={{
-//         backgroundImage: `url(https://res.cloudinary.com/dmrpovrmd/image/upload/v1711775837/img21_h2emkk.jpg)`,
+//       <div className="bg-cover bg-center min-h-screen" style={{ backgroundImage: `url(https://res.cloudinary.com/dmrpovrmd/image/upload/v1711775837/img21_h2emkk.jpg)`,
 //         width: "100%", // Adjust the width as needed
 //         height: "100%" // Adjust the height as needed
 //       }}>

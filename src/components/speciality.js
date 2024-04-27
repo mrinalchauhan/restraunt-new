@@ -27,37 +27,129 @@
 
 // export default SpecialityPage;
 import React from 'react';
-//import backgroundImage from '../img/backgroundImage.jpg';
-import image1 from '../img/img5.png';
-import image2 from '../img/img3.png';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import image1 from '../img/img1.png';
+import image2 from '../img/img1.png';
+import image3 from '../img/img1.png';
 
-const SpecialityPage = () => {
+const Testimonial = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768, // Mobile breakpoint
+                settings: {
+                    arrows: false,
+                },
+            },
+        ],
+    };
+
     return (
-        <div className="relative">
-            {/* Background Image */}
-            <div className="absolute inset-0 bg-cover bg-center bg-gray-900 z-0"></div>
-            {/* Content */}
-            <div className="relative z-10">
-                <div className="container mx-auto px-4 py-12 md:py-24">
-                    {/* Heading */}
-                    <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-white">Speciality</h1>
-                    {/* Subheading */}
-                  <p className="text-lg text-center text-white mb-12">We provide the best service and test you remember</p>
-      a              {/* Content Background */}
-                    <div className="bg-red-800 relative z-10">
-                        {/* X-shaped Background */}
-                        <div className="absolute top-0 left-0 w-0 h-0 border-r-959 border-b-1918 border-red-600"></div>
-                        <div className="absolute bottom-0 right-0 w-0 h-0 border-t-959 border-l-1918 border-red-600"></div>
-                        {/* Images */}
-                        <div className="flex justify-center">
-                            <img src={image1} alt="Image 1" className="w-60 h-auto object-cover mr-4" />
-                            <img src={image2} alt="Image 2" className="w-48 h-auto opacity-52 object-cover ml-4" />
+        <>
+            {/* Larger view */}
+            <div className="hidden md:block">
+                <div className="relative bg-gray-900 bg-cover bg-center min-h-screen py-16 md:py-24">
+                    <div className="container mx-auto">
+                        <h1 className="text-4xl md:text-5xl font-bold text-center py-6 md:py-10 text-red-600">Testimonials</h1>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
+                            {/* Testimonial 1 */}
+                            <div className="bg-gradient-to-b from-gray-700 to-gray-900 rounded-lg overflow-hidden flex flex-col items-center py-8 md:py-10 text-center shadow-md">
+                                <img src={image1} alt="Testimonial 1" className="rounded-full h-20 w-20 md:h-24 md:w-24 object-cover mt-4 md:mt-6" />
+                                <h2 className="text-white font-semibold mt-4 md:mt-6">Name</h2>
+                                <p className="text-white px-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, tortor non scelerisque bibendum, tortor non scelerisque bibendum, tortor non scelerisque bibendum, </p>
+                                <div className="mt-auto flex justify-end pr-4">
+                                    {[...Array(5)].map((_, index) => (
+                                        <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 fill-current mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fillRule="evenodd" d="M10 0a.75.75 0 0 1 .59.29l2.98 3.9 4.85.65a.75.75 0 0 1 .41 1.28l-3.5 3.4.83 4.86a.75.75 0 0 1-1.09.79L10 14.35l-4.36 2.3a.75.75 0 0 1-1.09-.79l.83-4.86-3.5-3.4a.75.75 0 0 1 .41-1.28l4.85-.65L9.41.29A.75.75 0 0 1 10 0zm0 2.5L8.55 5.44a.75.75 0 0 1-.56.42l-3.57.48 2.58 2.51c.18.18.26.44.22.7l-.61 3.61 3.2-1.68c.18-.09.39-.09.57 0l3.2 1.68-.61-3.61a.75.75 0 0 1 .22-.7l2.58-2.51-3.57-.48a.75.75 0 0 1-.56-.42L10 2.5z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Testimonial 2 */}
+                            <div className="bg-gradient-to-b from-gray-700 to-gray-900 rounded-lg overflow-hidden flex flex-col items-center text-center py-8 md:py-10 shadow-md mt-9">
+                                <img src={image2} alt="Testimonial 2" className="rounded-full h-20 w-20 md:h-24 md:w-24 object-cover mt-10 md:mt-6" />
+                                <h2 className="text-white font-semibold mt-4 md:mt-6">Name</h2>
+                                <p className="text-white px-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, tortor non scelerisque bibendum, tortor non scelerisque bibendum, tortor non scelerisque bibendum, </p>
+                                <div className="mt-auto flex justify-end pr-4">
+                                    {[...Array(5)].map((_, index) => (
+                                        <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 fill-current mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fillRule="evenodd" d="M10 0a.75.75 0 0 1 .59.29l2.98 3.9 4.85.65a.75.75 0 0 1 .41 1.28l-3.5 3.4.83 4.86a.75.75 0 0 1-1.09.79L10 14.35l-4.36 2.3a.75.75 0 0 1-1.09-.79l.83-4.86-3.5-3.4a.75.75 0 0 1 .41-1.28l4.85-.65L9.41.29A.75.75 0 0 1 10 0zm0 2.5L8.55 5.44a.75.75 0 0 1-.56.42l-3.57.48 2.58 2.51c.18.18.26.44.22.7l-.61 3.61 3.2-1.68c.18-.09.39-.09.57 0l3.2 1.68-.61-3.61a.75.75 0 0 1 .22-.7l2.58-2.51-3.57-.48a.75.75 0 0 1-.56-.42L10 2.5z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Testimonial 3 */}
+                            <div className="bg-gradient-to-b from-gray-700 to-gray-900 rounded-lg overflow-hidden flex flex-col items-center py-8 md:py-10 text-center shadow-md">
+                                <img src={image3} alt="Testimonial 3" className="rounded-full h-20 w-20 md:h-24 md:w-24 object-cover mt-4 md:mt-6" />
+                                <h2 className="text-white font-semibold mt-4 md:mt-6">Name</h2>
+                                <p className="text-white px-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, tortor non scelerisque bibendum, tortor non scelerisque bibendum, tortor non scelerisque bibendum, </p>
+                                <div className="mt-auto flex justify-end pr-4">
+                                    {[...Array(5)].map((_, index) => (
+                                        <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 fill-current mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fillRule="evenodd" d="M10 0a.75.75 0 0 1 .59.29l2.98 3.9 4.85.65a.75.75 0 0 1 .41 1.28l-3.5 3.4.83 4.86a.75.75 0 0 1-1.09.79L10 14.35l-4.36 2.3a.75.75 0 0 1-1.09-.79l.83-4.86-3.5-3.4a.75.75 0 0 1 .41-1.28l4.85-.65L9.41.29A.75.75 0 0 1 10 0zm0 2.5L8.55 5.44a.75.75 0 0 1-.56.42l-3.57.48 2.58 2.51c.18.18.26.44.22.7l-.61 3.61 3.2-1.68c.18-.09.39-.09.57 0l3.2 1.68-.61-3.61a.75.75 0 0 1 .22-.7l2.58-2.51-3.57-.48a.75.75 0 0 1-.56-.42L10 2.5z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            {/* Mobile view */}
+            <div className="">
+                <Slider {...settings}>
+                    <div className="bg-gradient-to-b from-gray-700 to-gray-900 rounded-lg overflow-hidden flex flex-col items-center py-8 md:py-10 text-center shadow-md">
+                        <img src={image1} alt="Testimonial 1" className="rounded-full h-20 w-20 md:h-24 md:w-24 object-cover mt-4 md:mt-6" />
+                        <h2 className="text-white font-semibold mt-4 md:mt-6">Name</h2>
+                        <p className="text-white px-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, tortor non scelerisque bibendum, tortor non scelerisque bibendum, tortor non scelerisque bibendum, </p>
+                        <div className="mt-auto flex justify-end pr-4">
+                            {[...Array(5)].map((_, index) => (
+                                <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 fill-current mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10 0a.75.75 0 0 1 .59.29l2.98 3.9 4.85.65a.75.75 0 0 1 .41 1.28l-3.5 3.4.83 4.86a.75.75 0 0 1-1.09.79L10 14.35l-4.36 2.3a.75.75 0 0 1-1.09-.79l.83-4.86-3.5-3.4a.75.75 0 0 1 .41-1.28l4.85-.65L9.41.29A.75.75 0 0 1 10 0zm0 2.5L8.55 5.44a.75.75 0 0 1-.56.42l-3.57.48 2.58 2.51c.18.18.26.44.22.7l-.61 3.61 3.2-1.68c.18-.09.39-.09.57 0l3.2 1.68-.61-3.61a.75.75 0 0 1 .22-.7l2.58-2.51-3.57-.48a.75.75 0 0 1-.56-.42L10 2.5z" />
+                                </svg>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="bg-gradient-to-b from-gray-700 to-gray-900 rounded-lg overflow-hidden flex flex-col items-center text-center py-8 md:py-10 shadow-md mt-9">
+                        <img src={image2} alt="Testimonial 2" className="rounded-full h-20 w-20 md:h-24 md:w-24 object-cover mt-10 md:mt-6" />
+                        <h2 className="text-white font-semibold mt-4 md:mt-6">Name</h2>
+                        <p className="text-white px-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, tortor non scelerisque bibendum, tortor non scelerisque bibendum, tortor non scelerisque bibendum, </p>
+                        <div className="mt-auto flex justify-end pr-4">
+                            {[...Array(5)].map((_, index) => (
+                                <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 fill-current mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10 0a.75.75 0 0 1 .59.29l2.98 3.9 4.85.65a.75.75 0 0 1 .41 1.28l-3.5 3.4.83 4.86a.75.75 0 0 1-1.09.79L10 14.35l-4.36 2.3a.75.75 0 0 1-1.09-.79l.83-4.86-3.5-3.4a.75.75 0 0 1 .41-1.28l4.85-.65L9.41.29A.75.75 0 0 1 10 0zm0 2.5L8.55 5.44a.75.75 0 0 1-.56.42l-3.57.48 2.58 2.51c.18.18.26.44.22.7l-.61 3.61 3.2-1.68c.18-.09.39-.09.57 0l3.2 1.68-.61-3.61a.75.75 0 0 1 .22-.7l2.58-2.51-3.57-.48a.75.75 0 0 1-.56-.42L10 2.5z" />
+                                </svg>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="bg-gradient-to-b from-gray-700 to-gray-900 rounded-lg overflow-hidden flex flex-col items-center py-8 md:py-10 text-center shadow-md">
+                        <img src={image3} alt="Testimonial 3" className="rounded-full h-20 w-20 md:h-24 md:w-24 object-cover mt-4 md:mt-6" />
+                        <h2 className="text-white font-semibold mt-4 md:mt-6">Name</h2>
+                        <p className="text-white px-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, tortor non scelerisque bibendum, tortor non scelerisque bibendum, tortor non scelerisque bibendum, </p>
+                        <div className="mt-auto flex justify-end pr-4">
+                            {[...Array(5)].map((_, index) => (
+                                <svg key={index} xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-yellow-500 fill-current mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10 0a.75.75 0 0 1 .59.29l2.98 3.9 4.85.65a.75.75 0 0 1 .41 1.28l-3.5 3.4.83 4.86a.75.75 0 0 1-1.09.79L10 14.35l-4.36 2.3a.75.75 0 0 1-1.09-.79l.83-4.86-3.5-3.4a.75.75 0 0 1 .41-1.28l4.85-.65L9.41.29A.75.75 0 0 1 10 0zm0 2.5L8.55 5.44a.75.75 0 0 1-.56.42l-3.57.48 2.58 2.51c.18.18.26.44.22.7l-.61 3.61 3.2-1.68c.18-.09.39-.09.57 0l3.2 1.68-.61-3.61a.75.75 0 0 1 .22-.7l2.58-2.51-3.57-.48a.75.75 0 0 1-.56-.42L10 2.5z" />
+                                </svg>
+                            ))}
+                        </div>
+                    </div>
+                </Slider>
+            </div>
+        </>
     );
 }
 
-export default SpecialityPage;
+export default Testimonial;
