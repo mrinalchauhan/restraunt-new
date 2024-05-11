@@ -4,12 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/bundle'; // Import Swiper bundle styles (if you're using Swiper bundle)
 import 'swiper/css/navigation';
-import image1 from '../img/img1.png';
-import image2 from '../img/img1.png';
-import image3 from '../img/img1.png';
-import image4 from '../img/img11.png';
+import image1 from '../../../img/img1.png';
+import image2 from '../../../img/img1.png';
+import image3 from '../../../img/img1.png';
+import image4 from '../../../img/img11.png';
 
-const Testimonial = () => {
+const TestimonialSection = () => {
     return (
         <div className="relative bg-gray-900 bg-cover bg-center min-h-screen py-16 md:py-24">
             <img src={image4} alt="Background Image 1" className="absolute top-0 right-0 opacity-10" style={{ maxWidth: '100%', maxHeight: '100%' }} />
@@ -77,7 +77,7 @@ const Testimonial = () => {
                     </SwiperSlide>
                     {/* Add more Testimonial Slides as needed */}
                     <SwiperSlide>
-                        <div className="border-white border-1.5 hover:border-transparent hover:scale-110 transition-transform duration-300 bg-gradient-to-b from-gray-600 to-gray-950 rounded-lg overflow-hidden flex flex-col items-center py-8 md:py-10 text-center shadow-md">
+                        <div className="hover:border-transparent hover:scale-110 transition-transform duration-300 bg-gradient-to-b from-gray-600 to-gray-950 rounded-lg overflow-hidden flex flex-col items-center py-8 md:py-10 text-center shadow-md">
                             <img src={image3} alt="Testimonial 3" className="rounded-full h-20 w-20 md:h-24 md:w-24 object-cover mt-4 md:mt-6" />
                             <h2 className="text-white font-semibold mt-4 md:mt-6">Name 4</h2>
                             <p className="text-white px-4 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida, tortor non scelerisque bibendum, tortor non scelerisque bibendum, tortor non scelerisque bibendum, </p>
@@ -96,4 +96,4 @@ const Testimonial = () => {
     );
 }
 
-export default Testimonial;
+export default TestimonialSection;

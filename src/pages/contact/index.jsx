@@ -1,13 +1,16 @@
 
 import React, { Suspense, lazy } from 'react';
 import { CiPhone, CiMail } from "react-icons/ci";
+import useSmoothScroll from '../../hooks/general/useSmoothScroll';
 
-const MapLocation = lazy(() => import('../section/contact/location'));
+const MapLocation = lazy(() => import('../../section/contact/location'));
 
 const Contact = () => {
+    useSmoothScroll();
+
     return (
 
-        <div className="bg-cover bg-center min-h-screen py-10 bg-gray-900"  >
+        <div className="bg-cover bg-center min-h-screen p-0 md:pt-8 bg-gray-900"  >
 
             <div className="flex flex-col gap-4 justify-center items-center min-h-screen p-4"> {/* Increased height */}
                 <div className="text-white font-bold text-center mb-1 md:mb-10"> {/* Adjusted margin class */}
