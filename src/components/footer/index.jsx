@@ -18,7 +18,6 @@ const Footer = () => {
                             alt="Love Khati Logo"
                             className="h-10 md:h-14 rounded-md"
                         />
-                        <h3 className="font-bold text-4xl">Love khati</h3>
                     </div>
                     <div className='mt-4'>
                         <p>Experience culinary delight at our restaurant. Indulge in exquisite flavors and enjoy our inviting ambiance. Every visit promises memorable dishes and elevated taste. Come dine with us!</p>
