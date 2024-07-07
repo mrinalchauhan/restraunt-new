@@ -19,13 +19,12 @@ const Sidebar = () => {
 
     return (
         <div className='flex w-screen justify-between items-center bg-gray-900 py-3 shadow-2xl px-4'>
-            <div className='flex items-center space-x-2'>
+            <div className='flex items-center space-x-2 ml-3'>
                 <img
-                    src="https://res.cloudinary.com/dmrpovrmd/image/upload/v1711775838/logo_q1of0l.jpg"
+                    src="https://firebasestorage.googleapis.com/v0/b/lovekhati-982c6.appspot.com/o/Love_Khati-removebg-preview.png?alt=media&token=18fd9138-314f-45a9-b8b8-fef3359f4f57"
                     loading='lazy'
                     alt="Love Kathi"
-                    className='h-8' />
-                <h1 className='text-red-200 font-medium text-xl'>Love Kathi</h1>
+                    className="h-12 md:h-16 rounded contrast-200 brightness-200" />
             </div>
             <button
                 className='bg-gray-700 bg-opacity-60 p-2 rounded-full text-xl'
