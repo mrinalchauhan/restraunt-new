@@ -40,7 +40,7 @@ const About = () => {
             {/* Our Story Section */}
             <div className=" relative pt-20 md:col-span-2 py-8 ">
                 <h2 className="text-5xl font-bold pt-10 text-center px-5 text-yellow-600 mb-4">Our Story</h2>
-                <p className="text-xl text-center px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tinciduntorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tiorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunncidun id.</p>
+                <p className="text-xl text-center px-5">Welcome to Love Khati, established in 2020 with a passion for serving the best food near ITER College. Our mission is to offer delicious and affordable meals that satisfy both your taste buds and your budget. At Love Khati, we take pride in our inviting atmosphere, friendly service, and a menu filled with culinary delights that will make every visit memorable. Whether you're a student, a local resident, or just passing by, we invite you to join us for an exceptional dining experience that won’t break the bank. Come and taste the love at Love Khati!</p>
             </div>
 
             <div className="hidden md:block">

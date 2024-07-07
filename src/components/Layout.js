@@ -5,11 +5,13 @@ import { MdOutlineFoodBank } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import { MdRestaurantMenu } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
+import { FaGift } from 'react-icons/fa';
 
 import Testimonial from './Testimonial';
 import Menu from './Menu';
 import About from './About';
 import Contact from './Contact';
+import Offer from '../pages/offer'
 
 const Home = () => (
   <>
@@ -61,6 +63,9 @@ const Layout = () => {
               </li>
               <li>
                 <Link to="/menu" className="text-white font-bold text-sm md:text-lg flex hover:text-red-400 active:text-red-400"><MdRestaurantMenu className='my-auto mx-1' />Menu</Link>
+              </li>
+              <li>
+                <Link to="/offer" className="text-white font-bold text-sm md:text-lg flex hover:text-red-400 active:text-red-400"><FaGift className='my-auto mx-1' />Offer</Link>
               </li>
             </ul>
             {/* Contact Button */}

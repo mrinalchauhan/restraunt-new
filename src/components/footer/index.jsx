@@ -21,16 +21,16 @@ const Footer = () => {
                         <h3 className="font-bold text-4xl">Love khati</h3>
                     </div>
                     <div className='mt-4'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ea soluta sint consequuntur maxime? Odio, possimus architecto.e! </p>
+                        <p>Experience culinary delight at our restaurant. Indulge in exquisite flavors and enjoy our inviting ambiance. Every visit promises memorable dishes and elevated taste. Come dine with us!</p>
                     </div>
                 </aside>
 
                 {/* Column 2 */}
                 <aside>
                     <h3 className="font-bold text-2xl">Location</h3>
-                    <p>123 Main Street</p>
-                    <p>City, State, Zip Code</p>
-                    <Link to='/contact'>
+                    <p>Love Khati, Plot No 777, near ITER College Road, Jagmohan Nagar</p>
+                    <p>Bhubaneswar, Odisha, 751030</p>
+                    <Link to='https://www.google.com/maps?sca_esv=0f377be67df6cd70&sca_upv=1&sxsrf=ADLYWIIxnngiwtXgZgvGC_Pg6gNQKywryA:1720336745568&lsig=AB86z5UH9kzFFHi3yoxZneb18oHt&kgs=b0a880a6cc679ed3&shndl=-1&shem=lsde,lsp&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KQHOM93mpxk6Me0-89LqyDam&daddr=Love+Khati,+Plot+No+777,+near+ITER+College+Road,+Jagmohan+Nagar,+Bhubaneswar,+Odisha+751030'>
                         <button className='flex items-center shadow-xl bg-red-600 bg-opacity-30 px-6 rounded-md py-4'>
                             <FaMapMarkedAlt className='my-auto mr-2' /> Locate On Map
                         </button>
@@ -42,11 +42,11 @@ const Footer = () => {
                     <h3 className="font-bold text-2xl">Contact</h3>
                     <div className="flex item-center space-x-3">
                         <FaPhoneAlt className='my-auto' />
-                        <p>0987654321</p>
+                        <p>9853967400</p>
                     </div>
                     <div className="flex item-center space-x-3">
                         <IoRestaurantOutline className='my-auto' />
-                        <p>Opening Hours: 9am - 5pm</p>
+                        <p>Opening Hours: 9 AM - 10 PM</p>
                     </div>
                     <div className='my-3 flex items-center space-x-4'>
                         <p className='font-semibold'>We Are Also On</p>
