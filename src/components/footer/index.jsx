@@ -13,7 +13,7 @@ const Footer = () => {
                 <aside>
                     <div className="flex items-center space-x-4">
                         <img
-                            src='https://res.cloudinary.com/dmrpovrmd/image/upload/v1711775838/logo_q1of0l.jpg'
+                            src='https://firebasestorage.googleapis.com/v0/b/lovekhati-982c6.appspot.com/o/Love_Khati-removebg-preview.png?alt=media&token=18fd9138-314f-45a9-b8b8-fef3359f4f57'
                             loading='lazy'
                             alt="Love Khati Logo"
                             className="h-10 md:h-14 rounded-md"
