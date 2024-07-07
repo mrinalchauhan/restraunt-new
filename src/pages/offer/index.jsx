@@ -109,7 +109,10 @@ const GenerateCode = () => {
     };
 
     return (
-        <div style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/lovekhati-982c6.appspot.com/o/food-advertisement-illustration%20(1).jpg?alt=media&token=51254ffb-7fdb-414b-b13a-ba14a74be08f')", filter: 'brightness(0.7) contrast(1.2)', backgroundSize: 'cover' }}>
+        <div style={{
+            background: 'linear-gradient(to bottom right, red, yellow, black)',
+            filter: 'brightness(0.7) contrast(1.2)',
+        }}>
             <div className="flex justify-center items-center h-screen ">
                 {submitted ? (
                     <div className="max-w-md w-full p-8 rounded-lg shadow-2xl shadow-slate-750 bg-opacity-50 bg-black" style={{ transform: 'rotateX(2deg) rotateY(2deg)' }}>

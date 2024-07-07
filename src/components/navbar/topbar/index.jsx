@@ -10,9 +10,9 @@ const TopBar = () => {
         <div className="fixed z-50 inset-x-0 top-0 bg-gray-800 bg-opacity-65">
             <div className="py-1 mx-auto flex justify-between items-center px-2">
                 {/* Logo */}
-                <div>
+                <div className="ml-4" >
                     <img
-                        src='https://res.cloudinary.com/dmrpovrmd/image/upload/v1711775838/logo_q1of0l.jpg'
+                        src='https://firebasestorage.googleapis.com/v0/b/lovekhati-982c6.appspot.com/o/Love_Khati-removebg-preview.png?alt=media&token=18fd9138-314f-45a9-b8b8-fef3359f4f57'
                         loading='lazy'
                         alt="Love Khati Logo"
                         className="h-12 md:h-16 rounded"
