@@ -17,7 +17,7 @@ const HomeHeroSection = () => {
                     <div className="relative z-10 text-white text-center md:text-left  mb-6 px-5 lg:mb-10">
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4  lg:mb-6">Delicious food for</h1>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-red-500 mb-4 lg:mb-6">Food lovers</h1>
-                        <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 lg:mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut mattis lectus. Ut ultrices nunc vel libero.</p>
+                        <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 lg:mb-6">Discover culinary excellence at our inviting restaurant. Come dine with us and elevate your palate!</p>
                     </div>
                     {/* Buttons */}
                     {/* Wrap buttons with Link component and set correct 'to' prop */}

@@ -4,6 +4,7 @@ import { IoMenuOutline } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineFoodBank } from "react-icons/md";
 import { MdRestaurantMenu } from "react-icons/md";
+import { FaGift } from 'react-icons/fa';
 
 const Sidebar = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -47,6 +48,9 @@ const Sidebar = () => {
                         </li>
                         <li>
                             <Link onClick={closeDropdown} to="/contact" className="text-white space-x-2 font-bold text-sm md:text-lg flex hover:text-red-400 active:text-red-400"><MdRestaurantMenu className='my-auto' /><span>Contact</span></Link>
+                        </li>
+                        <li>
+                            <Link onClick={closeDropdown} to="/offer" className="text-white space-x-2 font-bold text-sm md:text-lg flex hover:text-red-400 active:text-red-400"><FaGift className='my-auto' /><span>Offer</span></Link>
                         </li>
                     </ul>
                 </div>
