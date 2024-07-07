@@ -104,7 +104,7 @@ const Admin = () => {
     };
 
     return (
-        <div style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/lovekhati-982c6.appspot.com/o/wooden-board-looking-out-tables-restaurant%20(1).jpg?alt=media&token=82560df9-3383-46af-bd00-ae9dab19fad0')", filter: 'brightness(0.7) contrast(1.2)', backgroundSize: 'cover' }} className="flex justify-center items-center h-screen">
+        <div style={{ background: 'linear-gradient(to bottom right, red, purple, black, yellow)', filter: 'brightness(0.7) contrast(1.2)' }} className="flex justify-center items-center h-screen">
             <ToastContainer />
             {loggedIn ? (
                 <div className="max-w-md w-full p-8 rounded-lg shadow-2xl shadow-slate-750 bg-opacity-50 bg-black" style={{ transform: 'rotateX(2deg) rotateY(2deg)' }}>
