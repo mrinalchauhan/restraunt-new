@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/bundle'; // Import Swiper bundle styles (if you're using Swiper bundle)
 import 'swiper/css/navigation';
-import image4 from '../../../img/img11.jpg'
+
 
 const suraj = 'https://firebasestorage.googleapis.com/v0/b/lovekhati-982c6.appspot.com/o/surajsahu.jpg?alt=media&token=49154adc-8642-48b4-addf-7febebc7a16b';
 const anurag = 'https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/team%2Fanurag_kumar.webp?alt=media&token=f6085285-b723-4368-9be5-575ad884d7aa';
@@ -18,7 +18,7 @@ const anurupam = 'https://firebasestorage.googleapis.com/v0/b/lovekhati-982c6.ap
 const TestimonialSection = () => {
     return (
         <div className="relative bg-gray-900 bg-cover bg-center min-h-screen py-16 md:py-24">
-            <img src={image4} alt="Background Image 1" className="absolute top-0 right-0 opacity-10" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+            <div className="absolute top-0 right-0 opacity-10" style={{ maxWidth: '100%', maxHeight: '100%' }} />
             <div className="container mx-auto">
                 <h1 className="text-4xl md:text-5xl font-bold text-center py-6 md:py-10 text-red-600">Testimonials</h1>
                 {/* Swiper Slider */}

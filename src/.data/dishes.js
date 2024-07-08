@@ -898,18 +898,14 @@ export const chinese = [
 
 export const combos = [
     {
-        img: ComboImg,
-        price: 250,
-        title: 'Chicken Curry',
+        img: "https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fcomboimg1.jpeg?alt=media&token=28f43edf-2ec1-43d2-a3f3-4a9b78652f9b",
+        price: 780,
+        title: 'Chicken Biryani(3 plates) + Chicken Butter Masala(1 plate) + Chilly Chicken + Sprite/Thumbs-Up(750 ml)',
     },
     {
-        img: ComboImg,
-        price: 250,
-        title: 'Chicken Curry',
+        img: "https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fcomboimg2.jpeg?alt=media&token=56c54a9e-8159-4ffe-843b-4d35974556e5",
+        price: 750,
+        title: 'Veg Biryani(3 plates) + Panner Butter Masala(1 plate) + Chilly Panner(1 plate) + Sprite/Thumbs-Up(750 ml)',
     },
-    {
-        img: ComboImg,
-        price: 250,
-        title: 'Chicken Curry',
-    },
+    
 ]

@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import image4 from '../../../img/img2.png';
-import image2 from '../../../img/img1.png';
-
 const HomeHeroSection = () => {
 
     return (
@@ -33,10 +30,10 @@ const HomeHeroSection = () => {
                     </div>
 
                 </aside>
-                <img src={image4} alt="Love Kathi" className=" hidden md:block absolute bottom-0 left-0 opacity-50" style={{ maxWidth: '70%', maxHeight: '50%' }} />
+                <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fimg2.png?alt=media&token=1840ea1b-7a56-4744-8afd-e379fc9426b6" alt="img2-firebase" className=" hidden md:block absolute bottom-0 left-0 opacity-50" style={{ maxWidth: '70%', maxHeight: '50%' }} />
 
                 <aside className='flex items-center pt-0 md:pt-8'>
-                    <img src={image2} alt="Delicious Food" className="w-full h-full object-cover" style={{ animation: 'rotation 20s infinite linear' }} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fimg1.png?alt=media&token=1512d1f3-3ab6-4958-b0dc-7d30b15b9424" alt="img1-firebase" className="w-full h-full object-cover" style={{ animation: 'rotation 20s infinite linear' }} />
                 </aside>
             </section>
             <style>
@@ -54,5 +51,4 @@ const HomeHeroSection = () => {
         </React.Fragment>
     )
 }
-
 export default HomeHeroSection;

@@ -1,22 +1,9 @@
 import React, { useState } from 'react';
-import image1 from '../../../img/gallery/img01.jpg';
-import image2 from '../../../img/gallery/img02.jpg';
-import image3 from '../../../img/gallery/img03.jpg';
-import image4 from '../../../img/gallery/img04.jpg';
-import image5 from '../../../img/gallery/img01.jpg';
-import image6 from '../../../img/gallery/img05.jpg';
-import image7 from '../../../img/gallery/img06.jpg';
-import image8 from '../../../img/gallery/img07.jpg';
-import image9 from '../../../img/gallery/img08.jpg';
-
 const GallerySection = () => {
-
     const [showMore, setShoweMore] = useState(false);
-
     const handleShoweMore = () => {
         setShoweMore(!showMore);
     }
-
     return (
         <div className="bg-cover bg-gray-900 bg-center min-h-screen overflow-hidden">
             <div className="container mx-auto px-5 py-12 md:py-24">
@@ -25,37 +12,37 @@ const GallerySection = () => {
                 {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4"> */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="flex flex-col justify-between">
-                        <img src={image1} alt="Image 1" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery1.jpg?alt=media&token=af5febc8-2356-4345-8fc9-277626f91788" alt="Image 1" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
                         {
                             showMore && (
                                 <>
-                                    <img src={image2} alt="Image 2" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
-                                    <img src={image3} alt="Image 3" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery2.jpg?alt=media&token=e1a3138c-7ec6-4cec-98f7-1000b5d15aea" alt="Image 2" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery3.jpg?alt=media&token=bc50be5e-95be-4fdc-98f8-80cdaed56edc" alt="Image 3" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
                                 </>
                             )
                         }
                     </div>
 
                     <div className="flex flex-col justify-between">
-                        <img src={image4} alt="Image 4" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery4.jpg?alt=media&token=ed5d95d0-5c8e-44a3-aff0-b8b1967fdb43" alt="Image 4" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
 
                         {
                             showMore && (
                                 <>
-                                    <img src={image5} alt="Image 5" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
-                                    <img src={image6} alt="Image 6" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery5.jpg?alt=media&token=e8cd2b75-b980-41c8-bb95-59b8727cb3e6" alt="Image 5" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery6.jpg?alt=media&token=5e08b941-8459-4453-9b24-8ab427b8662f" alt="Image 6" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
                                 </>
                             )
                         }
 
                     </div>
                     <div className="flex flex-col justify-between">
-                        <img src={image7} alt="Image 7" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery7.jpg?alt=media&token=d23b3eb5-ee30-4f78-8f00-e77300d378f4" alt="Image 7" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
                         {
                             showMore && (
                                 <>
-                                    <img src={image8} alt="Image 8" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
-                                    <img src={image9} alt="Image 9" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery8.jpg?alt=media&token=29040549-8c07-4664-bfe0-e58f989a36b8" alt="Image 8" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/brandladder-webapp.appspot.com/o/client-project%2Flove-kathi%2Fgallery9.jpg?alt=media&token=6393b1ca-2d88-4570-b8f5-b7e57fa38789" alt="Image 9" className="w-full h-auto rounded-lg mb-7 border border-white hover:border-transparent hover:scale-110 transition-transform duration-300" />
                                 </>
                             )
                         }
@@ -75,12 +62,10 @@ const GallerySection = () => {
                                 Show More
                             </button>
                         </div>
-
                     )
                 }
             </div>
         </div>
     );
 }
-
 export default GallerySection;
